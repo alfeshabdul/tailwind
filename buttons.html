@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Buttons</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-purple-800 text-violet-200 flex justify-between">
+        <span class="text-xl flex items-center ml-9 mx-3 font-bold">Road To Code</span>
+        <ul class="px-4 sm:px-8 md:px-16 py-4 flex space-x-4 sm:space-x-8 md:space-x-11 justify-end">
+            <li><a class="cursor-pointer hover:text-white" href="index.html">Home</a></li>
+            <li><a class="cursor-pointer hover:text-white" href="navbar.html">Navbar</a></li>
+            <li><a class="cursor-pointer hover:text-white" href="buttons.html">Buttons</a></li>
+            <li><a class="cursor-pointer hover:text-white" href="cards.html">Cards</a></li>
+            <li><a class=" " href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container mx-auto mt-16">
+        <h2 class="text-3xl md:text-3xl text-pink-800 font-bold mb-4 mt-64">Here check the properties of Tailwind</h2>
+
+        <h1 class="text-3xl md:text-2xl text-purple-800 font-bold mb-4">BUTTONS</h1>
+
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-2">
+            Primary Button
+        </button>
+
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mb-2">
+            Secondary Button
+        </button>
+
+        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-2">
+            Success Button
+        </button>
+
+        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mb-2">
+            Danger Button
+        </button>
+
+        <button class="bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded cursor-not-allowed mb-2" disabled>
+            Disabled Button
+        </button>
+    </div>
+</body>
+
+</html>

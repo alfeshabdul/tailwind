@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-fuchsia-100">
+
+<nav class="bg-purple-800 text-violet-200 flex justify-between p-4">
+    <span class="text-xl font-bold">Road To Code</span>
+    <ul class="flex space-x-4">
+        <li><a class="hover:text-white" href="index.html">Home</a></li>
+        <li><a class="hover:text-white" href="navbar.html">Navbar</a></li>
+        <li><a class="hover:text-white" href="buttons.html">Buttons</a></li>
+        <li><a class="hover:text-white" href="cards.html">Cards</a></li>
+        <li><a class="text-blue-500 hover:text-white" href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="flex items-center justify-center h-screen">
+    <div class="p-8 rounded shadow-md bg-white w-full sm:w-96">
+        <h2 class="text-2xl font-semibold mb-4">Login</h2>
+        <form>
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                <input type="text" id="username" name="username" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" id="password" name="password" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

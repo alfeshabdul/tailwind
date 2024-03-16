@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Navigation Bars</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-purple-800 text-violet-200 flex justify-between">
+    <span class="text-xl flex items-center ml-9 mx-3 font-bold">Road To Code</span>
+    <ul class="px-4 sm:px-8 md:px-16 py-4 flex space-x-4 sm:space-x-8 md:space-x-11 justify-end">
+        <li><a class="cursor-pointer hover:text-white" href="index.html">Home</a></li>
+        <li><a class="cursor-pointer hover:text-white" href="navbar.html">Navbar</a></li>
+        <li><a class="cursor-pointer hover:text-white" href="buttons.html">Buttons</a></li>
+        <li><a class="cursor-pointer hover:text-white" href="cards.html">Cards</a></li>
+        <li><a class=" " href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<br><br>
+
+
+  <nav class="bg-purple-700 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 1</a>
+      <div class="flex space-x-4">
+        <a href="index.html" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-blue-500 p-4 mt-4">
+    <div class="container mx-auto flex justify-center items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 2</a>
+      <div class="flex space-x-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-green-600 p-4 mt-4">
+    <div class="container mx-auto flex flex-col">
+      <a href="#" class="text-white text-lg font-bold mb-4">Nav 3</a>
+      <a href="#" class="text-white">Home</a>
+      <a href="#" class="text-white">About</a>
+      <a href="#" class="text-white">Services</a>
+      <a href="#" class="text-white">Contact</a>
+    </div>
+  </nav>
+
+
+  <nav class="bg-yellow-600 p-4 mt-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 4</a>
+      <div class="relative">
+        <button class="text-white">Menu</button>
+        <div class="absolute bg-gray-800 top-full left-0 mt-2 w-32 p-2 rounded shadow-md hidden">
+          <a href="#" class="block text-white">Home</a>
+          <a href="#" class="block text-white">About</a>
+          <a href="#" class="block text-white">Services</a>
+          <a href="#" class="block text-white">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-red-700 p-4 mt-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 5</a>
+      <div class="relative">
+        <input type="text" placeholder="Search..." class="px-4 py-2 rounded bg-gray-700 text-white placeholder-white">
+        <button class="absolute right-0 top-0 h-full px-4 py-2 bg-gray-600 text-white">Search</button>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
+
+
+<!-- 
+<h1 class="text-3xl md:text-6xl text-purple-800 font-bold mb-4 mt-20">Navbar contants</h1>
+<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">My Website</span>
+    </div>
+    <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                Home
+            </a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                About
+            </a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                Contact
+            </a>
+        </div>
+    </div>
+</nav>
+
+ <!-- Basic Navbar -->
+ <nav class="bg-purple-700 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 1</a>
+      <div class="flex space-x-4">
+        <a href="index.html" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-blue-500 p-4 mt-4">
+    <div class="container mx-auto flex justify-center items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 2</a>
+      <div class="flex space-x-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">About</a>
+        <a href="#" class="text-white">Services</a>
+        <a href="#" class="text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-green-600 p-4 mt-4">
+    <div class="container mx-auto flex flex-col">
+      <a href="#" class="text-white text-lg font-bold mb-4">Nav 3</a>
+      <a href="#" class="text-white">Home</a>
+      <a href="#" class="text-white">About</a>
+      <a href="#" class="text-white">Services</a>
+      <a href="#" class="text-white">Contact</a>
+    </div>
+  </nav>
+
+
+  <nav class="bg-yellow-600 p-4 mt-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 4</a>
+      <div class="relative">
+        <button class="text-white">Menu</button>
+        <div class="absolute bg-gray-800 top-full left-0 mt-2 w-32 p-2 rounded shadow-md hidden">
+          <a href="#" class="block text-white">Home</a>
+          <a href="#" class="block text-white">About</a>
+          <a href="#" class="block text-white">Services</a>
+          <a href="#" class="block text-white">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="bg-red-700 p-4 mt-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">Nav 5</a>
+      <div class="relative">
+        <input type="text" placeholder="Search..." class="px-4 py-2 rounded bg-gray-700 text-white placeholder-white">
+        <button class="absolute right-0 top-0 h-full px-4 py-2 bg-gray-600 text-white">Search</button>
+      </div>
+    </div>
+  </nav> -->
